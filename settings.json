@@ -1,0 +1,106 @@
+{
+    /* @workbench */
+    "workbench.startupEditor": "newUntitledFile",
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+    /* @theme */
+    "workbench.colorTheme": "Material Theme Palenight High Contrast",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+        "[Material Theme Palenight High Contrast]": {
+            "minimap.background": "#292D3E55",
+        },
+    },
+    /* @explorer */
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    /* @breadcrumbs */
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.symbolSortOrder": "position",
+    /* @git */
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    /* @editor */
+    "editor.minimap.enabled": true,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.renderWhitespace": "selection",
+    "editor.renderControlCharacters": false,
+    "editor.fontFamily": "'Fira Code', 'Dank Mono', 'monospace', 'NotoSansMono', Cica",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "files.trimTrailingWhitespace": true,
+    "files.autoGuessEncoding": false,
+    "files.encoding": "utf8",
+    "editor.hover.enabled": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "editor.matchBrackets": "never",
+    /* @emmet */
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+    },
+    /* @leetcode */
+    "leetcode.workspaceFolder": "/home/ray/.leetcode",
+    "leetcode.defaultLanguage": "java",
+    "leetcode.hint.commandShortcut": false,
+    "leetcode.hint.commentDescription": false,
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.showCommentDescription": true,
+    /**
+     * extensions
+     */
+    /* @prettier */
+    "prettier.printWidth": 100,
+    "prettier.arrowParens": "always",
+    /* @bracket pair colorizer 2 */
+    "bracket-pair-colorizer-2.colors": [
+        "GOLD",
+        "ORCHID",
+        "SALMON",
+        "DEEPSKYBLUE",
+        "AQUAMARINE",
+        "MEDIUMPURPLE",
+        "YELLOWGREEN",
+        "BISQUE",
+        "ORANGE",
+        "POWDERBLUE",
+        "LIGHTPINK",
+        "CHOCOLATE",
+    ],
+    "bracket-pair-colorizer-2.highlightActiveScope": true,
+    "bracket-pair-colorizer-2.activeScopeCSS": [
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}",
+        "opacity: 0.5"
+    ],
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+    "bracket-pair-colorizer-2.showBracketsInRuler": true,
+    "bracket-pair-colorizer-2.scopeLineCSS": [
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}",
+        "opacity: 0.5"
+    ],
+    /**
+     * language specific
+     */
+    /* @java */
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    /* @javascript */
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "editor.useTabStops": true,
+        "editor.insertSpaces": true,
+    },
+
+    /* auto added */
+}
