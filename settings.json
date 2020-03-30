@@ -4,7 +4,7 @@
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
     /* @theme */
     "workbench.colorTheme": "Material Theme Palenight High Contrast",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "eq-material-theme-icons-light",
     "workbench.colorCustomizations": {
         "[Material Theme Palenight High Contrast]": {
             "minimap.background": "#292D3E55",
@@ -13,6 +13,13 @@
     /* @explorer */
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    /* @file association */
+    "files.associations": {
+        "*.mac": "vb"
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.autoGuessEncoding": false,
+    "files.encoding": "utf8",
     /* @breadcrumbs */
     "breadcrumbs.enabled": true,
     "breadcrumbs.symbolSortOrder": "position",
@@ -20,23 +27,26 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
+    "git.ignoreLegacyWarning": true,
     /* @editor */
     "editor.minimap.enabled": true,
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.renderWhitespace": "selection",
     "editor.renderControlCharacters": false,
-    "editor.fontFamily": "'Fira Code', 'Dank Mono', 'monospace', 'NotoSansMono', Cica",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "'Dank Mono', 'Fira Code', Cica, あずきフォント, Consolas, 'monospace', 'NotoSansMono', Cica",
+    "editor.fontSize": 15,
     "editor.fontLigatures": true,
-    "files.trimTrailingWhitespace": true,
-    "files.autoGuessEncoding": false,
-    "files.encoding": "utf8",
     "editor.hover.enabled": false,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
     "editor.matchBrackets": "never",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [{
+            "scope": [ "keyword.control.italic.rexx" ],
+            "settings": { "fontStyle": "italic" }
+        }]
+    },
     /* @emmet */
     "emmet.triggerExpansionOnTab": true,
     "emmet.includeLanguages": {
@@ -85,6 +95,12 @@
         "borderColor : {color}",
         "opacity: 0.5"
     ],
+    /* @docker */
+    "docker.containers.sortBy": "Label",
+    /* @remote-SSH */
+    "remote.SSH.remotePlatform": {
+        "AnsibleST_root": "linux"
+    },
     /**
      * language specific
      */
@@ -100,7 +116,14 @@
         "editor.tabSize": 2,
         "editor.useTabStops": true,
         "editor.insertSpaces": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    /* pli */
+    "[pli]": {
+        "files.encoding": "shiftjis"
     },
 
     /* auto added */
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
 }
