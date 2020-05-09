@@ -99,7 +99,8 @@
     "docker.containers.sortBy": "Label",
     /* @remote-SSH */
     "remote.SSH.remotePlatform": {
-        "AnsibleST_root": "linux"
+        "AnsibleST_root": "linux",
+        "rtServer": "linux"
     },
     /**
      * language specific
@@ -122,8 +123,11 @@
     "[pli]": {
         "files.encoding": "shiftjis"
     },
+    "indentRainbow.excludedLanguages": ["plaintext", "pli", "clist"],
 
     /* auto added */
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
