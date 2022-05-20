@@ -1,133 +1,181 @@
 {
-    /* @workbench */
-    "workbench.startupEditor": "newUntitledFile",
-    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-    /* @theme */
-    "workbench.colorTheme": "Material Theme Palenight High Contrast",
-    "workbench.iconTheme": "eq-material-theme-icons-light",
-    "workbench.colorCustomizations": {
-        "[Material Theme Palenight High Contrast]": {
-            "minimap.background": "#292D3E55",
-        },
-    },
-    /* @explorer */
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    /* @file association */
-    "files.associations": {
-        "*.mac": "vb"
-    },
-    "files.trimTrailingWhitespace": true,
-    "files.autoGuessEncoding": false,
-    "files.encoding": "utf8",
-    /* @breadcrumbs */
-    "breadcrumbs.enabled": true,
-    "breadcrumbs.symbolSortOrder": "position",
-    /* @git */
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "git.ignoreLegacyWarning": true,
-    /* @editor */
-    "editor.minimap.enabled": true,
-    "editor.suggestSelection": "recentlyUsedByPrefix",
-    "editor.renderWhitespace": "selection",
-    "editor.renderControlCharacters": false,
-    "editor.fontFamily": "'Dank Mono', 'Fira Code', Cica, あずきフォント, Consolas, 'monospace', 'NotoSansMono', Cica",
-    "editor.fontSize": 15,
-    "editor.fontLigatures": true,
-    "editor.hover.enabled": false,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-    },
-    "editor.matchBrackets": "never",
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [{
-            "scope": [ "keyword.control.italic.rexx" ],
-            "settings": { "fontStyle": "italic" }
-        }]
-    },
-    /* @emmet */
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-    },
-    /* @leetcode */
-    "leetcode.workspaceFolder": "/home/ray/.leetcode",
-    "leetcode.defaultLanguage": "java",
-    "leetcode.hint.commandShortcut": false,
-    "leetcode.hint.commentDescription": false,
-    "leetcode.hint.configWebviewMarkdown": false,
-    "leetcode.showCommentDescription": true,
-    /**
-     * extensions
-     */
-    /* @prettier */
-    "prettier.printWidth": 100,
-    "prettier.arrowParens": "always",
-    /* @bracket pair colorizer 2 */
-    "bracket-pair-colorizer-2.colors": [
-        "GOLD",
-        "ORCHID",
-        "SALMON",
-        "DEEPSKYBLUE",
-        "AQUAMARINE",
-        "MEDIUMPURPLE",
-        "YELLOWGREEN",
-        "BISQUE",
-        "ORANGE",
-        "POWDERBLUE",
-        "LIGHTPINK",
-        "CHOCOLATE",
-    ],
-    "bracket-pair-colorizer-2.highlightActiveScope": true,
-    "bracket-pair-colorizer-2.activeScopeCSS": [
-        "borderStyle : solid",
-        "borderWidth : 1px",
-        "borderColor : {color}",
-        "opacity: 0.5"
-    ],
-    "bracket-pair-colorizer-2.showBracketsInGutter": true,
-    "bracket-pair-colorizer-2.showBracketsInRuler": true,
-    "bracket-pair-colorizer-2.scopeLineCSS": [
-        "borderStyle : solid",
-        "borderWidth : 1px",
-        "borderColor : {color}",
-        "opacity: 0.5"
-    ],
-    /* @docker */
-    "docker.containers.sortBy": "Label",
-    /* @remote-SSH */
-    "remote.SSH.remotePlatform": {
-        "AnsibleST_root": "linux",
-        "rtServer": "linux"
-    },
-    /**
-     * language specific
-     */
-    /* @java */
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "java.configuration.checkProjectSettingsExclusions": false,
-    /* @javascript */
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-    "[javascript]": {
-        "editor.formatOnSave": true,
-        "editor.tabSize": 2,
-        "editor.useTabStops": true,
-        "editor.insertSpaces": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    /* pli */
-    "[pli]": {
-        "files.encoding": "shiftjis"
-    },
-    "indentRainbow.excludedLanguages": ["plaintext", "pli", "clist"],
+  /* Windows: $APPDATA/Code/User/settings.json */
+  /* @workbench */
+  "workbench.startupEditor": "newUntitledFile",
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "[Material Theme Palenight High Contrast]": {
+      "minimap.background": "#292D3E55"
+    }
+  },
+  /* @breadcrumbs */
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.symbolSortOrder": "position",
+  /* @explorer */
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
 
-    /* auto added */
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+  /* @security */
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.enabled": false,
+  "extensions.ignoreRecommendations": true,
+
+  /* @file association */
+  "files.associations": {
+    "*.mac": "vb"
+  },
+  /* @file encoding */
+  "files.autoGuessEncoding": false,
+  "files.encoding": "utf8",
+
+  /* @editor */
+  "editor.minimap.enabled": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.renderWhitespace": "selection",
+  "editor.renderControlCharacters": false,
+  "editor.fontFamily": "'Fira Code', 'Dank Mono', Cica, あずきフォント, Consolas, 'monospace', 'NotoSansMono', Cica",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.hover.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.matchBrackets": "never",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  /* @git */
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.ignoreLegacyWarning": true,
+
+  /* @leetcode */
+  "leetcode.workspaceFolder": "/home/ray/.leetcode",
+  "leetcode.defaultLanguage": "java",
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.hint.commentDescription": false,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.showCommentDescription": true,
+
+  /**
+   * extensions
+   */
+
+  /* @prettier */
+  "prettier.printWidth": 100,
+  "prettier.arrowParens": "always",
+
+  /* @bracket pair colorizer 2 */
+  "bracket-pair-colorizer-2.colors": [
+    "GOLD",
+    "ORCHID",
+    "SALMON",
+    "DEEPSKYBLUE",
+    "AQUAMARINE",
+    "MEDIUMPURPLE",
+    "YELLOWGREEN",
+    "BISQUE",
+    "ORANGE",
+    "POWDERBLUE",
+    "LIGHTPINK",
+    "CHOCOLATE"
+  ],
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showBracketsInRuler": true,
+  "bracket-pair-colorizer-2.scopeLineCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+
+  /* @docker */
+  "docker.containers.sortBy": "Label",
+
+  /* @remote-SSH */
+  "remote.SSH.remotePlatform": {
+    "nsaiac": "linux"
+  },
+
+  /**
+   * language specific
+   */
+  "files.trimTrailingWhitespace": true,
+
+  /* @java */
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "java.configuration.checkProjectSettingsExclusions": false,
+
+  /* @javascript */
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.useTabStops": true,
+    "editor.insertSpaces": true
+  },
+
+  /* @emmet */
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  /* pli */
+  "[pli]": {
+    "files.encoding": "shiftjis"
+  },
+  "indentRainbow.excludedLanguages": ["plaintext", "pli", "clist"],
+
+  /* markdown */
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  /* makefile */
+  "[makefile]": {
+    "editor.formatOnSave": false
+  },
+
+  /* terraform */
+  "[terraform]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.useTabStops": true,
+    "editor.insertSpaces": true
+  },
+
+  /* rexx */
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["keyword.control.italic.rexx"],
+        "settings": { "fontStyle": "italic" }
+      }
+    ]
+  },
+
+  /* auto added */
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": "{{put-password-here}}"
+    }
+  ],
+  "editor.accessibilitySupport": "off"
 }
