@@ -3,35 +3,50 @@
   /* @workbench */
   "workbench.startupEditor": "newUntitledFile",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-  "workbench.colorTheme": "Material Theme Palenight High Contrast",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Palenight (Mild Contrast)",
+  // "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#9370DB",
+    "editorBracketHighlight.foreground2": "#FFD700",
+    "editorBracketHighlight.foreground3": "#00BFFF",
+    "editorBracketHighlight.foreground4": "#FFA500",
+    "editorBracketHighlight.foreground5": "#9ACD32",
+    "editorBracketHighlight.foreground6": "#da70d6",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ff5555",
+    "minimap.background": "#292D3Eaa",
     "[Material Theme Palenight High Contrast]": {
-      "minimap.background": "#292D3E55"
-    }
+      "scrollbarSlider.background": "#81621dff",
+      "minimap.background": "#292D3Eaa"
+    },
+    "editorStickyScroll.background": "#181a1f",
+    "editorStickyScrollHover.background": "#272930",
+    "scrollbar.shadow": "#9370DB"
   },
+  "window.restoreWindows": "all",
   /* @breadcrumbs */
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolSortOrder": "position",
   /* @explorer */
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-
   /* @security */
   "security.workspace.trust.untrustedFiles": "open",
   "security.workspace.trust.enabled": false,
   "extensions.ignoreRecommendations": true,
-
   /* @file association */
   "files.associations": {
-    "*.mac": "vb"
+    "*.mac": "vb",
+    "*.txt": "shellscript"
   },
   /* @file encoding */
   "files.autoGuessEncoding": false,
   "files.encoding": "utf8",
-
   /* @editor */
   "editor.minimap.enabled": true,
+  "editor.stickyScroll.enabled": true,
+  "workbench.tree.enableStickyScroll": true,
+  "editor.accessibilitySupport": "off",
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.renderWhitespace": "selection",
   "editor.renderControlCharacters": false,
@@ -39,20 +54,22 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.hover.enabled": false,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
-  "editor.matchBrackets": "never",
+  "editor.matchBrackets": "near",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-
+  "editor.unicodeHighlight.ambiguousCharacters": false,
   /* @git */
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true,
   "git.ignoreLegacyWarning": true,
-
+  "git.openRepositoryInParentFolders": "always",
+  "git-autoconfig.configList": [
+    {
+      "user.email": "taihang.lei@accenture.com",
+      "user.name": "ray@tester"
+    }
+  ],
   /* @leetcode */
   "leetcode.workspaceFolder": "/home/ray/.leetcode",
   "leetcode.defaultLanguage": "java",
@@ -60,16 +77,15 @@
   "leetcode.hint.commentDescription": false,
   "leetcode.hint.configWebviewMarkdown": false,
   "leetcode.showCommentDescription": true,
-
   /**
    * extensions
    */
-
   /* @prettier */
   "prettier.printWidth": 100,
   "prettier.arrowParens": "always",
-
   /* @bracket pair colorizer 2 */
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
   "bracket-pair-colorizer-2.colors": [
     "GOLD",
     "ORCHID",
@@ -100,47 +116,103 @@
     "opacity: 0.5"
   ],
   "bracket-pair-colorizer-2.depreciation-notice": false,
-
   /* @docker */
   "docker.containers.sortBy": "Label",
-
   /* @remote-SSH */
   "remote.SSH.remotePlatform": {
-    "nsaiac": "linux"
+    "nsaiac": "linux",
+    "hori1": "linux",
+    "iac00": "linux",
+    "10.234.20.182": "linux",
+    "adop_tmp": "linux",
+    "gitlab_test01": "linux",
+    "gitlab_test03": "linux",
+    "gitlab_test04": "linux",
+    "nszd_gitlab": "linux",
+    "gitlab_test": "linux",
+    "nszddmz": "linux",
+    "nszd_dmz": "linux",
+    "nszd_tester": "linux",
+    "hyzp_git001": "linux",
+    "hyzp_iac001": "linux",
+    "nszd_linux_bastion": "linux",
+    "nszd_dev01_batch": "linux",
+    "adop": "linux",
+    "hyzp_snbat001": "linux",
+    "hyzs_iac001": "linux",
+    "hyzs_ifbat001": "linux",
+    "hyzs_dpl001": "linux",
+    "js01_jenkins": "linux",
+    "devops_jenkins": "linux",
+    "hyzp_dpl001": "linux",
+    "hyzm_mibat001": "linux",
+    "home_gitlab": "linux",
+    "ladc_napt": "linux",
+    "devops": "linux",
+    "nszu_linux_tester": "linux",
+    "dmz_migration": "linux",
+    "nszd_iac_migrate": "linux",
+    "nszd_gitlab_test": "linux"
   },
-
   /**
    * language specific
    */
   "files.trimTrailingWhitespace": true,
-
   /* @java */
   "java.errors.incompleteClasspath.severity": "ignore",
   "java.configuration.checkProjectSettingsExclusions": false,
-
   /* @javascript */
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
     "editor.useTabStops": true,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
+    }
   },
-
+  "debug.javascript.autoAttachFilter": "always",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  /* python */
+  "python.analysis.extraPaths": [],
+  "python.languageServer": "Pylance",
+  /* json */
+  "[json]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  /* xml */
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
   /* @emmet */
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
   /* pli */
   "[pli]": {
     "files.encoding": "shiftjis"
   },
   "indentRainbow.excludedLanguages": ["plaintext", "pli", "clist"],
-
+  /* html */
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   /* markdown */
   "[markdown]": {
     "editor.formatOnSave": false
@@ -149,7 +221,6 @@
   "[makefile]": {
     "editor.formatOnSave": false
   },
-
   /* terraform */
   "[terraform]": {
     "editor.formatOnSave": true,
@@ -157,16 +228,27 @@
     "editor.useTabStops": true,
     "editor.insertSpaces": true
   },
-
   /* rexx */
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "scope": ["keyword.control.italic.rexx"],
-        "settings": { "fontStyle": "italic" }
+        "settings": {
+          "fontStyle": "italic"
+        }
       }
     ]
   },
+  /* python */
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.formatOnSave": true
+  },
+  /* databricks */
+  "databricks.connection.default.personalAccessTokenSecure": {
+    "keyTarSettingName": "newSA-API-Token"
+  },
+  "jupyter.interactiveWindow.cellMarker.codeRegex": "^(#\\s*COMMAND\\s*[-]*|#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])",
 
   /* auto added */
   "mssql.connections": [
@@ -177,5 +259,9 @@
       "password": "{{put-password-here}}"
     }
   ],
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "redhat.telemetry.enabled": true,
+  "liveshare.presence": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "update.mode": "manual"
 }
